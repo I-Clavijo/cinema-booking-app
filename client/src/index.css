@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h2,
+h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.auth-container,
+.booking-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.auth-buttons {
+    margin-top: 20px;
+}
+
+.auth-buttons p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-buttons p button {
+    background-color: transparent;
+    color: #3498db;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.auth-buttons p button:hover {
+    color: #2980b9;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fae2e2;
+    border-radius: 4px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.booking-form,
+.booking-status,
+.bookings-list {
+    margin-bottom: 30px;
+}
+
+.bookings-list ul {
+    list-style: none;
+}
+
+.bookings-list li {
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-info {
+    flex-grow: 1;
+}
+
+.booking-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.confirm-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.confirm-btn:hover {
+    background-color: #219652;
+}
+
+.booking-status {
+    padding: 15px;
+    background-color: #e8f4fd;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.delete-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.time-btn,
+.seat-btn {
+    padding: 8px 12px;
+    border: 1px solid #3412ca;
+    background-color: #350375;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+    transition: all 0.2s ease;
+}
+
+.time-btn:hover,
+.seat-btn:hover {
+    background-color: #4371ee;
+}
+
+.time-btn.selected,
+.seat-btn.selected {
+    background-color: #3498db;
+    color: white;
+    border-color: #2980b9;
+}
